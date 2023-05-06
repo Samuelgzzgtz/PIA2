@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\Tareas.css">
+    <title>Tarea 8</title>
+</head>
+<body>
+    <header>
+        <h1>Tarea 8</h1>
+    </header>
+	  <h1>Definición de términos de Ruby</h1>
+    <h2>Símbolos</h2>
+    <p>Los símbolos son objetos inmutables de Ruby que se utilizan como identificadores, es decir, como nombres de variables, métodos y otras entidades dentro del programa. Se escriben con dos puntos seguidos del nombre, por ejemplo: <code>:mi_simbolo</code>.</p>
+
+    <h2>Sintaxis</h2>
+    <p>La sintaxis de Ruby es bastante flexible y se basa en el uso de palabras clave (como <code>if</code>, <code>else</code>, <code>while</code>, entre otras), operadores (como <code>+</code>, <code>-</code>, <code>*</code>, etc.) y objetos (como números, cadenas, arreglos, etc.) para construir programas. Los bloques de código se delimitan mediante el uso de llaves (<code>{}</code>) o palabras clave (<code>do</code> y <code>end</code>).</p>
+
+    <h2>Esqueleto de los programas</h2>
+    <p>Un programa básico en Ruby consta de una serie de declaraciones y expresiones que se ejecutan de arriba hacia abajo. Por ejemplo:</p>
+
+    <pre>
+    <code>
+    # Este es un comentario en Ruby
+    nombre = "Juan"
+    edad = 30
+    if edad > 18
+      puts "Hola, #{nombre}. Eres mayor de edad."
+    else
+      puts "Hola, #{nombre}. Eres menor de edad."
+    end
+    </code>
+    </pre>
+
+    <h2>Aplicación para descargar</h2>
+    <p>Para editar y ejecutar programas en Ruby, se puede utilizar el editor de texto de su elección y la consola de comandos de su sistema operativo. También hay varios entornos de desarrollo integrado (IDE) disponibles, como RubyMine y Visual Studio Code.</p>
+
+    <h2>Paradigma</h2>
+    <p>Ruby es un lenguaje de programación multiparadigma, lo que significa que permite la programación orientada a objetos, la programación funcional y otros estilos de programación.</p>
+
+    <h2>Ejemplo de programa en Ruby</h2>
+    <p>A continuación se muestra un ejemplo de programa en Ruby que calcula el factorial de un número utilizando una función recursiva:</p>
+
+    <pre>
+    <code>
+    # Esqueleto del programa
+	def calcular_descuento(precio, descuento)
+		descuento_decimal = descuento / 100.0
+		precio_con_descuento = precio * (1 - descuento_decimal)
+		return precio_con_descuento
+	end
+
+	# Ejemplo de uso
+	puts "Calculando el precio con descuento..."
+	puts "Precio original: $1000"
+	puts "Descuento: 20%"
+	precio_con_descuento = calcular_descuento(1000, 20)
+	puts "Precio con descuento: $#{precio_con_descuento.round(2)}"
+    </code>
+    </pre>
+	<p>Este programa calcula el precio de un artículo después de aplicar un descuento. En la primera parte del código se define la función calcular_descuento, que recibe dos parámetros: precio y descuento. Dentro de la función, se convierte el porcentaje de descuento a un número decimal y se aplica a precio para obtener el precio con descuento. Finalmente, se devuelve el resultado. En la segunda parte del código se muestra un ejemplo de uso de la función, donde se llama a calcular_descuento con un precio original de $1000 y un descuento del 20%. Luego se muestra el precio con descuento redondeado a dos decimales usando la función round(2).</p>
+<br>
+    <footer>
+		<div id="abajo" >
+			<button><a href="Tarea7.html">Anterior Tarea (Tarea 7)</a></button>
+			<button><a href="Menutareas.html">Regresar al menu de tareas</a></button>
+		</div>
+    </footer>
+</body>
+</html>

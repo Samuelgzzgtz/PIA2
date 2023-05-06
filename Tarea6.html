@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\Tareas.css">
+    <title>Tarea 6</title>
+</head>
+<body>
+    <header>
+        <h1>Tarea 6</h1>
+    </header>
+	<h1>Python</h1>
+	<p>Python es un lenguaje de programación interpretado, dinámico y multiplataforma, diseñado por Guido van Rossum en la década de 1990. Python se destaca por ser un lenguaje de alto nivel, fácil de aprender y de escribir, con una sintaxis clara y legible, lo que lo hace muy popular entre programadores principiantes y experimentados. Python es utilizado en una amplia variedad de aplicaciones, como desarrollo web, análisis de datos, inteligencia artificial, aprendizaje automático, automatización de tareas y scripting.</p>
+	<p>Python es un lenguaje de programación orientado a objetos, pero también soporta programación funcional y estructurada. Python es un lenguaje de código abierto, lo que significa que su código fuente está disponible para que cualquier persona lo modifique y lo use libremente.</p>
+
+	<h2>Símbolos</h2>
+	<p>Los símbolos más utilizados en Python son:</p>
+	<ul id="Ejemplos">
+		<li><code>+</code> - Suma</li>
+		<li><code>-</code> - Resta</li>
+		<li><code>*</code> - Multiplicación</li>
+		<li><code>/</code> - División</li>
+		<li><code>==</code> - Comparación de igualdad</li>
+	</ul>
+
+	<h2>Sintaxis</h2>
+	<p>La sintaxis básica de Python es la siguiente:</p>
+	<pre>
+	- Condicionales: 
+	if condicion:
+		# Código a ejecutar si la condición es verdadera
+	else:
+		# Código a ejecutar si la condición es falsa
+	</pre>
+	<pre>
+	- Bucles:
+	while condicion:
+		# Código a ejecutar mientras la condición sea verdadera
+
+	for variable in iterable:
+		# Código a ejecutar para cada elemento del iterable
+
+	</pre>
+	<pre>
+	- Funciones:
+	def nombre_funcion(parametro1, parametro2, ...):
+		# Código de la función
+		return valor_de_retorno
+	</pre>
+
+	<h2>Esqueleto de los programas</h2>
+	<p> El esqueleto de un programa en Python puede variar dependiendo de lo que se quiera hacer, pero en general sigue esta estructura básica:</p>
+	<pre>
+	# Comentario
+	# Importación de módulos
+	import modulo1
+	import modulo2
+
+	# Declaración de variables
+	variable1 = valor1
+	variable2 = valor2
+
+	# Condicionales
+	if condicion:
+		# Código a ejecutar si la condición es verdadera
+	else:
+		# Código a ejecutar si la condición es falsa
+
+	# Bucles
+	while condicion:
+		# Código a ejecutar mientras la condición sea verdadera
+
+	for variable in iterable:
+		# Código a ejecutar para cada elemento del iterable
+
+	# Funciones
+	def nombre_funcion(parametro1, parametro2, ...):
+		# Código de la función
+		return valor_de_retorno
+
+	# Llamada a funciones
+	resultado = nombre_funcion(argumento1, argumento2, ...)
+	</pre>
+
+	<h2>Aplicación para descargar</h2>
+	<p>Python es un lenguaje de programación popular utilizado en diferentes campos como la ciencia de datos, la inteligencia artificial, el desarrollo web y más. Para comenzar a trabajar con Python, necesitarás descargar e instalar Python en tu computadora. </p>
+
+	<h3>Pasos para descargar Python:</h3>
+	<ul id="Ejemplos">
+		<li>Visita el sitio web oficial de Python en <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+		<li>Selecciona la versión de Python que deseas descargar</li>
+		<li>Selecciona el sistema operativo que estás usando</li>
+		<li>Haz clic en el botón de descarga</li>
+		<li>Espera a que se complete la descarga</li>
+		<li>Ejecuta el archivo de instalación de Python</li>
+		<li>Sigue las instrucciones del instalador para instalar Python en tu computadora</li>
+		<li>¡Listo! Ahora puedes comenzar a trabajar con Python.</li>
+	</ul>
+
+	<p>Descargar Python es fácil y rápido. Si tienes algún problema durante el proceso de descarga o instalación, siempre puedes buscar en línea para obtener ayuda. </p>
+	
+	<h2>Tipo de paradigma</h2>
+	<p>Python es un lenguaje de programación multiparadigma, lo que significa que puede soportar diferentes enfoques y estilos de programación. Sin embargo, se considera que Python es principalmente un lenguaje de programación orientado a objetos.</p>
+    <p>En la programación orientada a objetos, los programas se escriben como colecciones de objetos que interactúan entre sí para realizar tareas. Cada objeto tiene propiedades (atributos) y comportamientos (métodos), y la interacción entre objetos se logra a través de mensajes.</p>
+    <p>Python también admite programación imperativa, que se centra en describir explícitamente el flujo de control de un programa, y programación funcional, que trata las computaciones como evaluaciones de funciones matemáticas.</p>
+
+	<h2>Ejemplo de programa en Python</h2>
+	<p>El siguiente es un ejemplo de un programa en Python que calcula el área de un círculo:</p>
+	<pre>
+		<code>
+		# Importar el módulo de matemáticas
+		import math
+
+		# Definir la función que calcula el área del círculo
+		def calcular_area_circulo(radio):
+		area = math.pi * radio ** 2
+		return area
+
+		# Pedir el radio al usuario
+		radio = float(input("Ingrese el radio del círculo: "))
+
+		# Calcular el área del círculo e imprimirlo en pantalla
+		area = calcular_area_circulo(radio)
+		print("El área del círculo es:", area)
+		</code>
+	</pre>
+
+	<p>Este programa importa el módulo de matemáticas y define una función para calcular el área de un círculo. Luego, pide al usuario que ingrese el radio del círculo, calcula el área y la imprime en pantalla.Este ejemplo ilustra algunas características importantes de Python, como el uso de módulos y la definición de funciones.</p>
+	<p>Para ejecutar este programa, puedes copiar y pegar el código en un archivo con extensión ".py" y ejecutarlo en tu computadora usando Python. </p>
+
+<br>
+    <footer>
+		<div id="abajo" >
+			<button><a href="Tarea5.html">Anterior Tarea (Tarea 5)</a></button>
+			<button><a href="Menutareas.html">Regresar al menu de tareas</a></button>
+			<button><a href="Tarea7.html">Siguiente tarea (Tarea 7)</a></button>
+		</div>
+    </footer>
+</body>
+</html>

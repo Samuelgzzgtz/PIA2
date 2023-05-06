@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\Tareas.css">
+    <title>Tarea 7</title>
+</head>
+<body>
+    <header>
+        <h1>Tarea 7</h1>
+    </header>
+	  <h1>Haskell</h1>
+
+    <p>Haskell es un lenguaje de programación funcional, es decir, se basa en el cálculo lambda y en la evaluación de funciones matemáticas. Se caracteriza por su fuerte tipado, su inferencia de tipos y su inmutabilidad de datos.</p>
+
+    <h2>Símbolos</h2>
+    <p>Los símbolos utilizados en Haskell son:</p>
+    <ul id="Ejemplos">
+        <li>Letras y dígitos: a-z, A-Z, 0-9</li>
+        <li>Caracteres especiales: +, -, *, /, %, ^, &, |, ~, !, ?, ., :, =, <, >, @, #, $, \, _, ' y ".</li>
+        <li>Caracteres especiales adicionales utilizados para funciones: ->, <-, ::, =</li>
+    </ul>
+
+    <h2>Sintaxis</h2>
+    <p>La sintaxis de Haskell se basa en expresiones y declaraciones. Una expresión puede ser un valor, una variable, una función o una aplicación de funciones. Una declaración puede ser una asignación, una definición de función o un condicional.</p>
+
+    <h2>Esqueleto de programas</h2>
+    <p>Un programa básico en Haskell tiene la siguiente estructura:</p>
+    <pre>
+    <code>
+        -- Módulo principal
+        module Main where
+
+        -- Importar librerías
+        import Data.List
+
+        -- Funciones
+        main :: IO ()
+        main = do
+            putStrLn "Hola, mundo!"
+    </code>
+    </pre>
+
+    <h2>Aplicación para descargar y ejecutar</h2>
+    <p>Existen varias aplicaciones para descargar y ejecutar programas en Haskell. Algunas de las más populares son:</p>
+    <ul id="Ejemplos">
+        <li>GHC (Glasgow Haskell Compiler): compilador de Haskell para sistemas operativos Windows, macOS y Linux.</li>
+        <li>Haskell Platform: plataforma completa que incluye el compilador GHC y varias librerías estándar.</li>
+        <li>OnlineGHC: sitio web que permite compilar y ejecutar programas Haskell en línea.</li>
+    </ul>
+
+    <h2>Tipo de paradigma</h2>
+    <p>Haskell es un lenguaje de programación funcional, lo que significa que se basa en la evaluación de funciones matemáticas. Es un lenguaje de programación de alto nivel que permite la programación declarativa, lo que significa que se enfoca en qué se debe hacer en lugar de cómo se debe hacer.</p>
+
+    <h2>Ejemplo de programa en Haskell</h2>
+    <p>Aquí tienes un ejemplo de un programa en Haskell que calcula el factorial de un número:</p>
+		<pre><code>
+	-- Importamos el módulo Prelude que contiene funciones básicas como (+), (-), (*), etc.
+	import Prelude
+
+	-- Definimos una función que toma un número entero y devuelve su factorial
+	factorial :: Integer -> Integer
+	factorial 0 = 1 -- Caso base
+	factorial n = n * factorial (n - 1) -- Caso recursivo
+
+	-- Función principal que se ejecuta al correr el programa
+	main :: IO ()
+	main = do
+		putStrLn "Calculadora de factoriales"
+		putStrLn "Ingresa un número:"
+		input <- getLine
+		let n = read input :: Integer
+		let result = factorial n
+		putStrLn ("El factorial de " ++ input ++ " es " ++ show result)
+		</code></pre>
+		<p>En este programa, se define una función factorial que calcula el factorial de un número entero utilizando recursión. Luego, en la función main, se pide al usuario que ingrese un número y se utiliza la función factorial para calcular su factorial, el cual es mostrado en la salida estándar. El esqueleto básico del programa en Haskell incluye la definición de funciones, así como la función main que se ejecuta al correr el programa. También se pueden incluir importaciones de módulos externos y comentarios.</p>
+<br>
+    <footer>
+		<div id="abajo" >
+			<button><a href="Tarea6.html">Anterior Tarea (Tarea 6)</a></button>
+			<button><a href="Menutareas.html">Regresar al menu de tareas</a></button>
+			<button><a href="Tarea8.html">Siguiente tarea (Tarea 8)</a></button>
+		</div>
+    </footer>
+</body>
+</html>

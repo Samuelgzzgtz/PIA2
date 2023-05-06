@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\Tareas.css">
+    <title>Tarea 5</title>
+</head>
+<body>
+    <header>
+        <h1>Tarea 5</h1>
+    </header>
+	<h1>Prolog</h1>
+	<p>Prolog es un lenguaje de programación lógico utilizado para la inteligencia artificial y la programación declarativa. Se basa en el cálculo de predicados y permite describir relaciones y reglas para deducir nuevas conclusiones a partir de la información disponible.</p>
+
+	<h2>Símbolos</h2>
+	<p>Los símbolos más utilizados en Prolog son:</p>
+	<ul id="Ejemplos">
+		<li><code>,</code> - coma: separa diferentes términos</li>
+		<li><code>.</code> - punto: indica el final de una cláusula</li>
+		<li><code>:-</code> - dos puntos guión: indica una regla</li>
+		<li><code>;</code> - punto y coma: utilizado para representar alternativas</li>
+		<li><code>|</code> - barra vertical: utilizado para separar una lista en su primer elemento y el resto de la lista</li>
+	</ul>
+
+	<h2>Sintaxis</h2>
+	<p>La sintaxis básica de Prolog es la siguiente:</p>
+	<pre>
+	predicado(argumento1, argumento2, ..., argumentoN) :-
+		cláusula1,
+		cláusula2,
+		...,
+		cláusulaN.
+	</pre>
+
+	<h2>Esqueleto de los programas</h2>
+	<p>Un programa Prolog consta de una serie de cláusulas que establecen relaciones y reglas. En general, un programa Prolog se puede estructurar de la siguiente manera:</p>
+	<pre>
+	% Hechos
+	hecho1.
+	hecho2.
+
+	% Reglas
+	regla1 :- cláusula1, cláusula2.
+	regla2 :- cláusula3, cláusula4.
+
+	% Consultas
+	?- consulta1.
+	?- consulta2.
+	</pre>
+
+	<h2>Aplicación para descargar</h2>
+	<p>Hay varias aplicaciones para editar y ejecutar programas Prolog. Algunas de las más populares son:</p>
+	<ul id="Ejemplos">
+		<li><a href="https://www.swi-prolog.org/" target="_blank">SWI-Prolog</a></li>
+		<li><a href="https://www.gnu.org/software/gprolog/" target="_blank">GNU Prolog</a></li>
+		<li><a href="https://eclipseclp.org/" target="_blank">ECLiPSe</a></li>
+	</ul>
+
+	<h2>Tipo de paradigma</h2>
+	<p>Prolog es un lenguaje de programación lógico, basado en el cálculo de predicados y utilizado para la inteligencia artificial y la programación declarativa.</p>
+
+	<h2>Ejemplo de programa en Prolog</h2>
+	<p>A continuación, se presenta un ejemplo de un programa escrito en Prolog:</p>
+ <pre>
+  hombre(juan).
+  hombre(pedro).
+  hombre(pablo).
+  mujer(maria).
+  mujer(laura).
+  mujer(juana).
+  
+  padre(juan, pedro).
+  padre(juan, pablo).
+  madre(maria, pedro).
+  madre(maria, pablo).
+  padre(pedro, laura).
+  madre(juana, laura).
+  
+  abuelo(X, Y) :- padre(X, Z), (padre(Z, Y); madre(Z, Y)).
+  abuela(X, Y) :- madre(X, Z), (padre(Z, Y); madre(Z, Y)).
+  
+  abuelo(juan, laura).
+  </pre>
+  <p>Este programa define un conjunto de hechos y reglas que representan las relaciones familiares entre un grupo de personas. El programa permite, por ejemplo, consultar quiénes son los abuelos de Laura.</p>
+<br>
+    <footer>
+		<div id="abajo" >
+			<button><a href="Tarea4.html">Anterior Tarea (Tarea 4)</a></button>
+			<button><a href="Menutareas.html">Regresar al menu de tareas</a></button>
+			<button><a href="Tarea6.html">Siguiente tarea (Tarea 6)</a></button>
+		</div>
+    </footer>
+</body>
+</html>
